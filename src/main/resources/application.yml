@@ -1,0 +1,40 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  #  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    username: root
+#    password: iamgroot
+#    url: jdbc:postgresql://localhost:5685/extractor_db
+#    hikari:
+#      auto-commit: false
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+#    show-sql: false
+#    database: postgresql
+#    generate-ddl: true
+#    open-in-view: true
+#    hibernate:
+#      ddl-auto: update
+#      naming:
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        jdbc:
+#          lob:
+#            non_contextual_creation: true
+#          time_zone: UTC
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+
