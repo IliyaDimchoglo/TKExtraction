@@ -9,6 +9,6 @@ login - (POST)/acess_token {
         password - %password);
 }
 
-submit - (POST)/cvs/submit (request param - file.pdf, access_token);
+submit - (POST)/cvs/submit (request param - file(pdf), access_token);
 
 retieve - (GET)/cvs/retieve (request param - processId(long), acess_token);
