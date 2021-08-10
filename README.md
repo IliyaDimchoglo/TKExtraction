@@ -4,8 +4,8 @@ login - (POST)/acess_token {
 
 (Basic: username - client, password - secret),
 
-(Query: grant_type - password
-        username - %username
+(Query: grant_type - password,
+        username - %username,
         password - %password);
 }
 
